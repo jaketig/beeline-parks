@@ -4,9 +4,16 @@ import {builder, Builder} from "@builder.io/react";
 
 builder.init(process.env.BUILDER_API_KEY)
 
-export const MuiButon = (props) => (
-  <Button {...props}>{props.text}</Button>
-);
+export const MuiButon = (props) => {
+  const buttonProps = {...props};
+  delete buttonProps.builderBlock;
+  delete buttonProps.builderState;
+  delete buttonProps.text;
+
+  return (
+    <Button {...buttonProps}>{props.text}</Button>
+  )
+};
 
 Builder.registerComponent(MuiButon, {
   name: "MuiButton",
@@ -44,6 +51,5 @@ Builder.registerComponent(MuiButon, {
       type: "boolean",
       defaultValue: false,
     },
-
   ],
 });

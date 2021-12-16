@@ -5,6 +5,8 @@ builder.init(process.env.BUILDER_API_KEY)
 
 export const MuiContainer = withChildren((props) => {
   const containerProps = {...props};
+  delete containerProps.builderBlock;
+  delete containerProps.builderState;
   delete containerProps.children;
 
   return (

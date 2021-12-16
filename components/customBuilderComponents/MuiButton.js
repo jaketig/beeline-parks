@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Button } from '@mui/material'
-import { Builder } from "@builder.io/react";
+import {builder, Builder} from "@builder.io/react";
+
+builder.init(process.env.BUILDER_API_KEY)
 
 export const MuiButon = (props) => (
   <Button {...props}>{props.text}</Button>

@@ -33,7 +33,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{mt: 8}}>
+    <AppBar position="absolute" sx={{mt: 8}}>
       <Container>
         <Toolbar disableGutters sx={{minHeight: '64px'}}>
           {/* Logo */}

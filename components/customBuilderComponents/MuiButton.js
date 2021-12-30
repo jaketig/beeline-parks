@@ -35,6 +35,12 @@ Builder.registerComponent(MuiButon, {
       defaultValue: "#",
     },
     {
+      name: "target",
+      type: "string",
+      enum: ['_self', '_blank', '_parent', '_top'],
+      defaultValue: "_self",
+    },
+    {
       name: "size",
       type: "string",
       enum: ['small', 'medium', 'large'],

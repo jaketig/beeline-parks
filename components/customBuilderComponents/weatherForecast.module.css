@@ -1,0 +1,52 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.card {
+    flex-grow: 1;
+    margin-right: 15px;
+    border: 1px solid #222;
+    background-color: #222 !important;
+    color: white !important;
+    min-width: 160px;
+    flex-wrap: wrap;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+
+.imgWrapper {
+    width: 100%;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.img {
+    filter: brightness(0) invert(1);
+}
+
+
+
+.avg {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.highlow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+.footer {
+    padding: 5px 0px;
+    text-align: center;
+    background-color: white !important;
+    color: #222 !important;
+
+}

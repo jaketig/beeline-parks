@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@builder.io/react": "^1.1.47",
+    "@builder.io/utils": "^1.0.4",
     "@builder.io/widgets": "^1.2.21",
     "@emotion/cache": "^11.7.1",
     "@emotion/react": "^11.7.1",

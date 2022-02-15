@@ -19,8 +19,7 @@ export async function getStaticProps({ params }) {
   await getAsyncProps(content, {
     async WeatherForecast(props) {
       return {
-        data: await fetch(`https://api.openweathermap.org/data/2.5/forecast/daily?id=5888716&units=metric&cnt=3&appid=${process.env.OPENWEATHER_API_KEY}`).then(res => res.json()),
-        test: 'jake was here'
+        data: await fetch(`https://api.openweathermap.org/data/2.5/forecast/daily?id=5888716&units=metric&cnt=3&appid=${process.env.OPENWEATHER_API_KEY}`).then(res => res.json())
       }
     }
   })

@@ -38,16 +38,22 @@ const ResponsiveAppBar = () => {
       <Container>
         <Toolbar disableGutters sx={{minHeight: '64px'}}>
           {/* Logo */}
-          <Box sx={{width: "200px", mr: 2}}>
-            <Box sx={{position: 'absolute', top: '-40px', width: '200px', zIndex: 9}}>
-              <Image
-                src={logo}
-                alt="Beeline Parks"
-                layout="responsive"
-                priority
-              />
+
+            <Box sx={{width: "200px", mr: 2}}>
+              <Box sx={{position: 'absolute', top: '-40px', width: '200px', zIndex: 9}}>
+                <Link href={"/"}>
+                  <a>
+                    <Image
+                      src={logo}
+                      alt="Beeline Parks"
+                      layout="responsive"
+                      priority
+                    />
+                  </a>
+                </Link>
+              </Box>
             </Box>
-          </Box>
+
 
           {/* Mobile Menu */}
           <Box sx={{ flexGrow: 1, justifyContent: 'flex-end', display: { xs: 'flex', md: 'none' } }}>

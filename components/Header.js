@@ -15,9 +15,9 @@ const pages = [{
   text: 'Attractions',
   href: '/#attractions'
 }, {
-//   text: 'Blog',
-//   href: '/blog',
-// }, {
+  text: 'Gallery',
+  href: '/gallery',
+}, {
   text: 'Contact',
   href: '/#contact'
 }];

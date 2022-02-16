@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Link from "next/link";
 import { AppBar, Container, Box, Toolbar, Button, IconButton, Typography, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Image from 'next/image';
@@ -14,9 +15,9 @@ const pages = [{
   text: 'Attractions',
   href: '/#attractions'
 }, {
-  text: 'Blog',
-  href: '/blog',
-}, {
+//   text: 'Blog',
+//   href: '/blog',
+// }, {
   text: 'Contact',
   href: '/#contact'
 }];
@@ -79,9 +80,11 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.href} href={page.href} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.text}</Typography>
-                </MenuItem>
+                <Link key={page.href} href={page.href} onClick={handleCloseNavMenu}>
+                  <MenuItem>
+                    <Typography textAlign="center">{page.text}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>

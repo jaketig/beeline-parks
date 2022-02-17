@@ -17,7 +17,7 @@ export function WeatherForecast(props) {
       {days.map((day) =>
         <Card className={classes.card} key={day.dt}>
           <div className={classes.imgWrapper}>
-            <img className={classes.img} src={`http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`}/>
+            <img className={classes.img} src={`https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`} alt={day.weather[0].description}/>
           </div>
           <div className={classes.avg}>{Math.round(day.temp.day)}°</div>
           <div className={classes.highlow}>

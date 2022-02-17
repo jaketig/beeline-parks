@@ -22,7 +22,8 @@ export default function MyApp(props) {
       <Head>
         <title>Beeline Parks</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-      </Head>
+        <meta name="description" content="Bee Line Parks is a family friendly trailer park located in Port Bruce (Aylmer), Ontario" />
+    </Head>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />

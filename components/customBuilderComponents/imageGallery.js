@@ -9,8 +9,13 @@ function ImageGallery(props) {
   return (
     <SimpleReactLightbox>
       <SRLWrapper>
-        <Masonry columns={{ sm: 2, md: 3, lg: 4}} spacing={2}>
-
+        <Masonry
+          columns={{ sm: 2, md: 3, lg: 4}}
+          spacing={2}
+          defaultHeight={450}
+          defaultColumns={4}
+          defaultSpacing={1}
+        >
         {(props.images || []).map((image) =>
           <a href={image.src} key={image.src}>
             <img src={image.src} alt={image.alt} style={{width: '100%'}}/>
